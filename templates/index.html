@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class = "p-3 mb-2 bg-info text-dark">
+    <div class="container">
+      {% comment %} TODO: 4. /index 페이지에는 로그인 한 유저 이름을 출력해야 합니다. ex) hello, 홍길동 {% endcomment %}
+      {% if username %}
+        Hello, {{username}}
+      {% else %}
+        Hello, world
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
